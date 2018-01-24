@@ -19,14 +19,14 @@ header{
 	align-self: flex-start;
     width:100%;
     height:290px;
-	margin-bottom:55px;
+	margin-bottom: 35px;
 }
 
 /*constrution et apparence du logo*/
 #logo{
 	position:relative;
 	margin: 0.70em auto -0.25em;
-	padding: 0.50em 0.20em;
+	padding: 0.75em 0.20em;
 	width: 6.5em;
 	z-index:2;
 	border-style: double;
@@ -101,6 +101,7 @@ main{
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, .25);
 	display: flex;
 	z-index:1;
+	margin-top: 20px;
 }
 
 /*construction du menu latéral*/
