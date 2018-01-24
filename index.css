@@ -1,0 +1,107 @@
+.bandeau_produits{
+	background-color: rgb(75,75,75);
+	width: 100%;
+}
+
+.bandeau_produits:last-child{
+	background-color: rgb(45,45,45);
+}
+
+.message{
+	background-color: rgb(45, 45, 45);
+	width: 100%;
+}
+
+.message p{
+	color: rgb(255, 255, 255);
+	width: 100%;
+}
+
+#container{
+	display:flex;
+	flex-direction: column;
+}
+
+.container:last-child{
+	padding-bottom:15px;
+}
+
+.container h2{
+	background-color:rgb(45, 45, 45);
+	padding: 0.25em 0.5em;
+	color:white;
+	margin:15px 0px;
+	font-family: 'Federo', sans-serif;
+}
+
+#messagejour p{
+	margin:0px 25%;
+	text-align:justify;
+	font-size:20px;
+	font-family:'Dosis';
+
+}
+
+.boxes{
+	padding: 0 10px;
+}
+
+.box{
+	float:left;
+	width : 18%;
+	margin: 5px 10px;
+	border-radius: 15px;
+	position:relative;
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.box p{
+	display: inline-block;
+	height: 100%;
+	color: rgb(175, 35, 5);
+	font-family: 'Federo';
+	font-size: 48px;
+}
+
+.box img{
+	width:100%;
+  	height:100%;
+  	border-radius: 15px;
+  	display:block;
+  	
+}
+
+.opaque{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgb(75, 75, 75);
+	border-radius: 15px;
+	align-content: space-around;
+  }
+
+.box:hover .opaque{
+	opacity: 1;
+}
+
+.infos{
+  	position: absolute;
+  	top: 50%;
+  	margin-left: 60px;
+  	transform: translate(-50%, -50%);
+ 	-ms-transform: translate(-50%, -50%);
+}
+
+.container p{
+	display:block;
+	font-size:16px;
+	color:white;
+	font-family: 'Federo', sans-serif;
+}

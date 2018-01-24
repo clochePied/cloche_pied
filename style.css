@@ -1,0 +1,200 @@
+/*taille du body et couleur du fond*/
+body{
+	width: 97.5%;
+	margin: 0 auto 1.25%;
+	background-color: rgb(150, 40, 0);
+	background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+	repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+	repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+}
+
+/*gestion du header, du main et du footer. position et taille*/
+#wrap{
+	display: flex;
+	flex-direction: column;
+}
+
+/*emplacement du header et gestion de ses marges*/
+header{
+	align-self: flex-start;
+    width:100%;
+    height:290px;
+	margin-bottom:55px;
+}
+
+/*constrution et apparence du logo*/
+#logo{
+	position:relative;
+	margin: 0.70em auto -0.25em;
+	padding: 0.50em 0.20em;
+	width: 6.5em;
+	z-index:2;
+	border-style: double;
+	border-width: thick;
+	border-color: rgb(255, 255, 255);
+	border-radius: .3em;
+	background-color: rgb(0, 0, 0);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+	font-family: 'Poiret One', sans-serif;
+    font-size: 60px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+/*gestion du bandeau gris sous le logo*/
+#ribbon{
+	position: relative;
+	width: 22em;
+	padding: 0.8em 1.5em; 
+	margin: 0 auto 3em;
+	background-color: rgb(75, 75, 75);
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-family: 'Poiret One', sans-serif;
+	font-size: 32px;
+}
+
+#ribbon:before, #ribbon:after{
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid rgb(45, 45, 45);
+ z-index: -1;
+}
+
+#ribbon:before{
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+
+#ribbon:after{
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+
+#ribbon #ribbon-content:before, #ribbon #ribbon-content:after{
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: rgb(60,60,60) transparent transparent transparent;
+ bottom: -1em;
+}
+
+#ribbon #ribbon-content:before{
+ left: 0;
+ border-width: 1em 0 0 1em;
+ z-index: 0;
+}
+
+#ribbon #ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+ z-index: 0;
+}
+
+/*gestion du main*/
+main{
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, .25);
+	display: flex;
+	z-index:1;
+}
+
+/*construction du menu latéral*/
+.menu{
+	background-color: rgb(225, 115, 30);
+	border-top-left-radius: 15px;
+	width: 250px;
+	padding: 0.1em 0em;
+	box-shadow: 5px 0px 7.5px rgba(0, 0, 0, .25);
+	z-index:2;
+}
+
+.menu a{
+	text-decoration: none;
+	color:white;
+}
+
+.menu ul{
+	margin: 0 0 auto -30px;
+	max-width: 250px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.menu ul li:first-child{
+	padding: 0.75em 0 0.5em;
+}
+
+.menu ul li{
+	padding: 0.25em 0 0.5em;
+	border-bottom : medium dotted rgb(120,50,5);
+	list-style: none;
+	font-family: 'Federo', sans-serif;
+	font-size: 24px;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	border-top-right-radius: 15px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: rgb(175, 35, 5);
+	align-content: space-around;
+	z-index:1;
+}
+
+.container h1{
+	display: block;
+	color: rgb(0, 0, 0);
+	font-family: 'Federo', 'Times New Roman', serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+/*gestion du footer*/
+footer{
+	align-self: flex-end;
+	width: 100%;
+	height:120px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: rgb(45, 45, 45);
+	display: flex;
+	justify-content: space-between;
+}
+
+footer dl:first-child{
+	margin-left: 1.5em;
+}
+
+dl{
+	padding: 0 1.5em;
+	margin: 0.5em 1em 1em;
+	border-left-style: solid;
+	border-left-width: thin;
+	border-left-color: rgb(255, 255, 255);	
+}
+
+
+dt{
+	padding: .35em 0 .25em;
+	font-family: 'Federo', sans-serif;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+
+dd{
+	margin-left: 0.5em;
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+

@@ -1,0 +1,10 @@
+.product_small{
+	height: 150px;
+	width: 150px;
+	margin: 15px;
+}
+
+.product_small img{
+	height: 100%;
+	border-radius: 15px;
+}
