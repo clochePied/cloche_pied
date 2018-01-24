@@ -1,0 +1,53 @@
+.container{
+	flex-direction: column;
+}
+
+
+h2:first-child{
+	padding-top: 20px;
+}
+
+.container h2 {
+	display: block;
+	text-align: center;
+	Font-family: 'Federo';
+	font-size: 20pt;
+	margin: auto;	
+}
+.container p {
+	display: block;
+	padding-top: 5px;
+	text-align: justify;
+	Font-family: 'Dosis';
+	font-size : 16pt;
+	width: 80%;
+	margin: auto;
+	color: rgb(255,255,255);
+	}
+p:last-child{
+	padding-bottom: 40px;
+}
+
+	.portrait {
+    height: 105px;
+    width: 105px;
+    background: red;
+	background-clip: content-box;
+	padding: 7px;
+	transform: rotate(45deg);
+	margin: 90px auto 45px;
+	border-style: dotted;
+	border-color: rgb(255,255,255);
+}
+.portrait img {
+    max-width: 105px;
+    height: auto;
+}
+
+#duo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 500px;
+	margin: auto;
+}
