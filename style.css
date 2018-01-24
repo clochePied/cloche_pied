@@ -141,13 +141,12 @@ main{
 
 .container{
 	width: 100%;
+	padding: 1.5%;
 	display: flex;
 	border-top-right-radius: 15px;
-	flex-wrap: wrap;
 	flex-direction: row;
 	flex-wrap: wrap;
 	background-color: rgb(175, 35, 5);
-	align-content: space-around;
 	z-index:1;
 }
 
