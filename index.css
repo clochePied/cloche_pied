@@ -18,8 +18,15 @@
 }
 
 #container{
-	display:flex;
+	width: 100%;
+	display: flex;
+	border-top-right-radius: 15px;
+	flex-wrap: wrap;
 	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: rgb(175, 35, 5);
+	align-content: space-around;
+	z-index:1;
 }
 
 .container:last-child{
