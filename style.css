@@ -103,6 +103,11 @@ main{
 	margin-top: 20px;
 }
 
+#homeIcon{
+	padding:1em;
+}
+
+
 /*construction du menu latéral*/
 .menu{
 	background-color: rgb(225, 115, 30);
@@ -144,7 +149,7 @@ main{
 
 .container{
 	width: 100%;
-pu	border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
 	flex-direction: row;
 	flex-wrap: wrap;
 	background-color: rgb(175, 35, 5);
