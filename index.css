@@ -49,17 +49,41 @@
 
 }
 
+@media screen and (max-width: 950px) {
+	#messagejour p{
+		margin:0px 10%;
+	}
+}
+
 .boxes{
 	padding: 0 10px;
 }
 
 .box{
 	float:left;
-	width : 18%;
+	width : 17%;
 	margin: 5px 10px;
 	border-radius: 15px;
 	position:relative;
 	text-align: center;
+}
+
+@media screen and (max-width: 545px) {
+	.box{
+		width : 95%;
+	}
+}
+
+@media screen and (min-width:545px) and (max-width: 657px) {
+	.box{
+		width :46%;
+	}
+}
+
+@media screen and (min-width:657px) and (max-width: 910px) {
+	.box{
+		width :28%;
+	}
 }
 
 .box p{
