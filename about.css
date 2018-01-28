@@ -9,7 +9,7 @@ h2:first-child{
 .container h2 {
 	display: block;
 	text-align: center;
-	Font-family: 'Federo';
+	font-family: 'Federo';
 	font-size: 20pt;
 	margin: auto;	
 }
@@ -17,7 +17,7 @@ h2:first-child{
 	display: block;
 	padding-top: 5px;
 	text-align: justify;
-	Font-family: 'Dosis';
+	font-family: 'Dosis';
 	font-size : 16pt;
 	width: 80%;
 	margin: auto;
