@@ -3,7 +3,7 @@
 	padding: 10px 0 25px;
 	display: flex;
 	flex-direction: row;
-	margin: 1.5% auto;
+	margin: 1.5% 2.25% 0.5%;
 	min-width: 95%;
 	max-height: 95%;
 }
@@ -34,15 +34,17 @@
 }
 
 .bandeau{
-	flex:1;
 	background-color: rgb(75, 75, 75);
 	padding: 0.75em 1.5em 0.5em; 
 	margin: 0 0 auto;
 	border-top-right-radius:15px;
+	
+}
+.product-info h1{
 	font-family: 'Federo', sans-serif;
-	text-align: right;
+	background-color: rgb(75, 75, 75);
 	letter-spacing: 0.1em;
-	font-size: 32px;
+	font-size: 40px;
 	color: rgb(255, 255, 255);
 }
 
@@ -71,19 +73,30 @@ label{
 	text-align : left;
 }
 
-input[type="submit"]{
-	min-width: 30%;
+.product-info a{
+	margin: auto 0 0 auto;
+}
+
+#ajout{
+	width: 200px;
 	border-radius: 15px 0 15px 0;
-	margin: 0 0 auto auto;
 	padding: 0.5em 0.25em;
-	cursor:pointer;
-	background-color: rgb(75, 75, 75);
+	background-color: rgb(75, 75, 75);	
+}
+
+#ajout img{
+	width:25px;
+	vertical-align:middle;
+	border-radius: 0;
+	margin: auto 2px auto 5px;
+}
+
+input[type="submit"]{
 	border: none;
+	background-color: rgb(75, 75, 75);
+	cursor:pointer;
 	font-family: 'Federo', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	color: rgb(255,255,255);
-}
-input[type="submit"]::before{
-	content: url("./imgs/icons/panier_p.png");
 }
