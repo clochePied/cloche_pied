@@ -19,12 +19,12 @@ h2:first-child{
 	text-align: justify;
 	font-family: 'Dosis';
 	font-size : 16pt;
-	width: 80%;
+	width: 70%;
 	margin: auto;
 	color: rgb(255,255,255);
 	}
 p:last-child{
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 }
 
 	.portrait {
