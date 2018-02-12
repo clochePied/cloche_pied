@@ -10,54 +10,64 @@
 		<link rel="stylesheet" href="basket.css" type="text/css"/>
 	</head>
 	<body>
-	<main>
-		<div class="produits">
-			<img src="./imgs/w/chewing_gum.jpg" alt="Chewing gum shoe by Kobi Levi">
-			<h1>Chewing gum shoe</h1>
-			<p>Kobi Levi</p>
-			<p>675 €</p>
-			<label>Disponible en taille :
-				<select name="taille">
-					<option>36</option>
-					<option>36,5</option>
-					<option>38</option>
-					<option>41</option>
-				</select>
-			</label>
-			<label>Pied :
-				<select name="pied">
-					<option>droit</option>
-					<option>gauche</option>
-				</select>
-			</label>
-			<input type="submit" value="Retirer du panier">
+		<div id="wrap">
+			<header>
+				<div id="logo">Cloche-Pied</div>
+				<div id="ribbon">
+					<span id="ribbon-content">Le spécialiste de la chaussure pour unijambiste</span>
+				</div>
+			</header>
+			<main>
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="new.html">Nouveautés</a></li>
+							<li><a href="men.html">Hommes</a></li>
+							<li><a href="women.html">Femmes</a></li>
+							<li><a href="sales.html">Promotions</a></li>
+							<li><a href="basket.html">Votre panier<img src="imgs/icons/panier.png"/></a></li>
+							<li id="search"><input type="search" placeholder="Rechercher..."/><a href="product.html"><img src="imgs/icons/loupe.png"/></a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div id="container">
+					<div class="container">
+						<div id="articles">
+							<div class="article"><img src="./imgs/w/k_tesoro/Oil_Spiller.jpg" alt="Oil Spiller Shoes"></div>
+							<div class="article"> </div>
+							<div class="article"> </div>
+						</div>
+					</div>
+				</div>														
+			</main>
+			<footer>
+					<dl>
+						<dt>Contact</dt>
+						<nav>
+							<dd><a href="progress.html">Nous trouver</dd>
+							<dd><a href="progress.html">Lettre d'information</dd>
+							<dd><a href="progress.html">Facebook</dd>
+						</nav>
+					</dl>
+					<dl>
+						<dt>Services &amp; conditions</dt>
+						<nav>
+							<dd><a href="progress.html">Commandes et retours</dd>
+							<dd><a href="progress.html">Conditions de vente</dd>
+							<dd><a href="progress.html">Mentions légales</dd>
+						</nav>
+					</dl>
+					<dl>
+						<dt>Cloche-Pied</dt>
+						<nav>
+							<dd><a href="about.html">♢Qui sommes-nous ?♢</a><dd>
+							<dd><a href="progress.html">Plan du site</dd>
+							<dd><a href="details.html">♢Détails techniques♢</dd>
+						</nav>
+					</dl>
+				</footer>
 		</div>
-	</main>
-	<footer>
-				<dl>
-					<dt>Contact</dt>
-					<nav>
-						<dd><a href="progress.html">Nous trouver</dd>
-						<dd><a href="progress.html">Lettre d'information</dd>
-						<dd><a href="progress.html">Facebook</dd>
-					</nav>
-				</dl>
-				<dl>
-					<dt>Services &amp; conditions</dt>
-					<nav>
-						<dd><a href="progress.html">Commandes et retours</dd>
-						<dd><a href="progress.html">Conditions de vente</dd>
-						<dd><a href="progress.html">Mentions légales</dd>
-					</nav>
-				</dl>
-				<dl>
-					<dt>Cloche-Pied</dt>
-					<nav>
-						<dd><a href="about.html">Qui sommes-nous ?</a><dd>
-						<dd><a href="progress.html">Plan du site</dd>
-						<dd><a href="details.html">Détails techniques</dd>
-					</nav>
-				</dl>
-			</footer>
 	</body>
 </html>
