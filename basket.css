@@ -1,26 +1,17 @@
-#container{
-	width: 100%;
-	display: flex;
-	border-top-right-radius: 15px;
-	flex-wrap: wrap;
-	flex-direction: column;
-	flex-wrap: wrap;
-	background-color: rgb(175, 35, 5);
-	align-content: space-around;
-	z-index:1;
+.container h2 {
+	display:block;
+    background-color: rgb(45, 45, 45);
+    padding: 0.25em 0.5em;
+    color: white;
+    margin: 15px 0px;
+    font-family: 'Federo', sans-serif;
 }
 
 .container:last-child{
 	padding-bottom:15px;
 }
 
-.container h2{
-	background-color:rgb(45, 45, 45);
-	padding: 0.25em 0.5em;
-	color:white;
-	margin:15px 0px;
-	font-family: 'Federo', sans-serif;
-}
+
 
 .container p{
 	display:block;
@@ -29,6 +20,85 @@
 	font-family: 'Federo', sans-serif;
 }
 
-.article{
+.basket{
+	padding: 2%;
+	margin: auto;
+	padding-bottom: 15px;
+	border-radius:15px;
+}
+
+.achat{
+	background-color: rgb(75,75,75);
+	height: 380px;
+}
+.achat:first-child{
+	border-radius: 15px 15px 0 0;
+}
+
+.achat img{
+	height: 80%;
+	float: left;
+}
+
+.achat table{
+	border-collapse:collapse;
+	font-family: Dosis;
+	font-size: 14pt;
+	color: rgb(255,255,255);
+	text-align: left;
+	margin: auto;
+	width: 60%;
+}
+.achat th, td{
+	border-bottom: dotted thin rgba(255,255,255,.5);
+	padding: 2em .5em 0 0;
+}
+
+
+.achat th{
+	font-weight: bold;
 	width:80%;
+}
+
+
+.retrait{
+	background-color: rgb(75, 75, 75);
+	margin: 2em 0 0 auto;
+	width: 25%;
+	border: solid thin rgba(255,255,255,.5);
+	padding: .25em .5em;
+	border-radius: 10px 0;	
+}
+
+.retrait img{
+	display: inline-block;
+	width:25px;
+	vertical-align:middle;
+	border-radius: 0;
+	margin: 4em 0 0 auto;
+}
+.achat input[type="submit"]{
+	display: inline-block;
+	border: none;
+	background-color: rgb(75, 75, 75);
+	cursor:pointer;
+	font-family: 'Federo', sans-serif;
+	font-size: 16pt;
+	text-align: center;
+	color: rgb(255,255,255);
+}
+
+.headerarticle{
+	background-color: rgb(45,45,45);
+	padding: 0 2.75em;
+	display: flex;
+	justify-content: space-between;
+	height:20%;
+}
+.headerarticle:first-child{
+	border-radius: 15px 15px 0 0;
+}
+.headerarticle p{
+	display:inline-block;
+	font-size: 20pt;
 }
