@@ -1,3 +1,17 @@
+th{
+	font-weight: bold;
+	width:80%;
+	vertical-align: bottom;
+}
+input[type="submit"]{
+	text-align: center;
+	font-family: 'Federo', sans-serif;
+	color: rgb(255,255,255);
+	display: inline-block;
+	border: none;
+	cursor:pointer;
+}
+
 .container h2 {
 	display:block;
     background-color: rgb(45, 45, 45);
@@ -21,15 +35,32 @@
 }
 
 .basket{
-	padding: 2%;
-	margin: auto;
-	padding-bottom: 15px;
+	margin: auto 2%;
 	border-radius:15px;
+	background-color: rgb(225, 115, 30);
 }
+
+.basket table{
+	border-collapse:collapse;
+	font-family: Dosis;
+	font-size: 18pt;
+	color: rgb(255,255,255);
+	text-align: left;
+	margin: 0 auto 1em;
+	width: 50%;
+}
+
+.basket th, td{
+	border-bottom: dotted thin rgba(255,255,255,.5);
+	padding: 0 .25em;
+}
+
+
 
 .achat{
 	background-color: rgb(75,75,75);
 	height: 380px;
+	box-shadow: 0 3px 5px rgba(0,0,0,.3);
 }
 .achat:first-child{
 	border-radius: 15px 15px 0 0;
@@ -54,40 +85,6 @@
 	padding: 2em .5em 0 0;
 }
 
-
-.achat th{
-	font-weight: bold;
-	width:80%;
-}
-
-
-.retrait{
-	background-color: rgb(75, 75, 75);
-	margin: 2em 0 0 auto;
-	width: 25%;
-	border: solid thin rgba(255,255,255,.5);
-	padding: .25em .5em;
-	border-radius: 10px 0;	
-}
-
-.retrait img{
-	display: inline-block;
-	width:25px;
-	vertical-align:middle;
-	border-radius: 0;
-	margin: 4em 0 0 auto;
-}
-.achat input[type="submit"]{
-	display: inline-block;
-	border: none;
-	background-color: rgb(75, 75, 75);
-	cursor:pointer;
-	font-family: 'Federo', sans-serif;
-	font-size: 16pt;
-	text-align: center;
-	color: rgb(255,255,255);
-}
-
 .headerarticle{
 	background-color: rgb(45,45,45);
 	padding: 0 2.75em;
@@ -102,3 +99,41 @@
 	display:inline-block;
 	font-size: 20pt;
 }
+
+.retrait{
+	background-color: rgb(75, 75, 75);
+	margin: 4.9em 0 0 auto;
+	width: 20%;
+	border: solid thin rgba(255,255,255,.5);
+	padding: .25em .5em;
+	border-radius: 10px 0;
+	text-align: center;
+}
+
+.retrait img{
+	display: inline-block;
+	width:25px;
+	vertical-align:middle;
+	border-radius: 0;
+}
+.achat input[type="submit"]{
+	background-color: rgb(75, 75, 75);
+	font-size: 16pt;
+	
+}
+
+#poursuivre, #commande{
+	background-color: rgb(225, 115, 30);
+	font-size: 20pt;
+	border: solid thin rgb(255,255,255);
+	padding: .25em .5em;
+}
+#poursuivre{
+	border-radius: 0 15px;
+}
+#commande{
+	border-radius: 15px 0;
+}
+ form:last-child{
+ 	float:right;
+ }
