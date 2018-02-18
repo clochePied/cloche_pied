@@ -1,0 +1,29 @@
+#container {
+	width: 100%;
+	border-top-right-radius: 15px;
+	background-color: rgb(175, 35, 5);
+	z-index: 1;
+}
+#mentions{
+	max-height: 95%;
+	width: 100%;
+}
+
+#mentions p{
+	font-family: Dosis;
+	font-size: 14pt;
+	color: rgb(255,255,255);
+	padding-left: 10%;
+}
+#mentions h2{
+	font-family: 'Federo', sans-serif;
+	font-size: 16pt;
+	padding: 0.5em 12%;
+	color: rgb(255,255,255);
+	background-color: rgb(45,45,45);
+	width: 76%;
+}
+
+cite{
+	font-style: normal;
+}

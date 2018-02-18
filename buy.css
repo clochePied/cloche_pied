@@ -1,0 +1,118 @@
+.container h2 {
+	display:block;
+    background-color: rgb(45, 45, 45);
+    padding: 0.25em 0.5em;
+    color: white;
+    margin: 15px 0px;
+    font-family: 'Federo', sans-serif;
+}
+
+table{
+	border-collapse:collapse;
+	font-family: Dosis;
+	font-size: 14pt;
+	color: rgb(255,255,255);
+	text-align: left;
+	margin: 0 auto 1em;
+	width: 80%;
+}
+
+#recap{
+	font-family: 'Federo', sans-serif;
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+th{
+	
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	margin: 0 5% 5%;
+	background-color: rgb(225, 115, 30);
+	border-radius: 15px;
+}
+
+.coord input, select{
+	display: inline-block;
+	float: right;
+	margin: .75% 67.5% .5% 0;
+}
+
+p{
+	font-family: Dosis;
+	font-size: 14pt;
+	color: rgb(255,255,255);
+	margin-left: 5%;
+}
+
+abbr{
+	color: rgb(175, 35, 5);
+	font-size: 18pt;
+	text-decoration: none;
+}
+
+label, legend{
+	display: block;
+	font-family: Dosis;
+	font-size: 12pt;
+	color: rgb(255,255,255);
+	margin-left: 12.5%;
+	min-height: 40px;
+}
+legend{
+	margin-left:0;
+}
+fieldset{
+	border-radius: 15px;
+	border: solid thin rgb(255,255,255);
+	width: 30%;
+	padding: .25em .5em;
+	margin: auto auto 2% 11.5%;
+	align-content: space-between;
+}
+
+fieldset:last-child{
+	display: flex;
+}
+
+fieldset:last-child label, fieldset:last-child select{
+	display: inline-block;
+	margin: auto;
+}
+
+#bouton{
+	display: inline-block;
+	width: 35%;
+	margin-bottom: -47.5px;
+}
+#retour, #achat{
+	background-color: rgb(225, 115, 30);
+	font-size: 20pt;
+	border: solid thin rgb(255,255,255);
+	padding: .25em .5em;
+	
+}
+#retour{
+	border-radius: 0 15px;
+}
+#achat{
+	align-self: flex-end;
+	border-radius: 15px 0;
+	width: 35%;
+}
+
+input[type="submit"]{
+	text-align: center;
+	font-family: 'Federo', sans-serif;
+	color: rgb(255,255,255);
+	display: inline-block;
+	border: none;
+	cursor:pointer;
+}
+
+

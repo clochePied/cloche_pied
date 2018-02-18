@@ -122,13 +122,13 @@ input[type="submit"]{
 	
 }
 
-#poursuivre, #commande{
+#retour, #commande{
 	background-color: rgb(225, 115, 30);
 	font-size: 20pt;
 	border: solid thin rgb(255,255,255);
 	padding: .25em .5em;
 }
-#poursuivre{
+#retour{
 	border-radius: 0 15px;
 }
 #commande{
