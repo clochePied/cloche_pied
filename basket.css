@@ -122,15 +122,21 @@ input[type="submit"]{
 	
 }
 
-#retour, #commande{
+#boutonretour, #commande{
 	background-color: rgb(225, 115, 30);
 	font-size: 20pt;
 	border: solid thin rgb(255,255,255);
 	padding: .25em .5em;
 }
-#retour{
+#boutonretour{
+	font-family: 'Federo', sans-serif;
+	color: rgb(255,255,255);
+	text-align: center;
+	width: 35%;
+	margin-bottom: -47.5px;
 	border-radius: 0 15px;
 }
+
 #commande{
 	border-radius: 15px 0;
 }

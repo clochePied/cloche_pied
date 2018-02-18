@@ -5,7 +5,7 @@
     	<meta charset="utf-8" />
 	  	<meta name="author" content="Hugo Develly et Lohysia Mouette"/>
 	  	<meta name="description" content="Chaussure Uniijambiste Dépareillé"/>
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One|Federo|Dosis:light"/>
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One%7CFedero%7CDosis:light"/>
 		<link rel="stylesheet" href="style.css" type="text/css"/>
 		<link rel="stylesheet" href="product.css" type="text/css"/>
   	</head>
@@ -40,24 +40,26 @@
 							<h1>Chewing gum shoe</h1>
 							<p class="designer">Kobi Levi</p>
 							<p class="prix">675 €</p>
-							<label>Disponible en taille :
-								<select name="taille">
-									<option>36</option>
-									<option>36,5</option>
-									<option>38</option>
-									<option>41</option>
-								</select>
-							</label>
-							<label>Pied :
-								<select name="pied">
-									<option>droit</option>
-									<option>gauche</option>
-								</select>
-							</label>
-							<a href="basket.html"><div id="ajout">
-								<img src="imgs/icons/panier_p.png"/>
-								<input type="submit" value="Ajouter au panier">
-							</div></a>
+							<form action="basket.html">
+								<label>Disponible en taille :
+									<select name="taille">
+										<option>36</option>
+										<option>36,5</option>
+										<option>38</option>
+										<option>41</option>
+									</select>
+								</label>
+								<label>Pied :
+									<select name="pied">
+										<option>droit</option>
+										<option>gauche</option>
+									</select>
+								</label>
+								<div id="ajout">
+									<img src="imgs/icons/panier_p.png" alt="icône ajout panier"/>
+									<input type="submit" value="Ajouter au panier" name="ajoutp" id="ajoutp">
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>

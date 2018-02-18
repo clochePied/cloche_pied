@@ -87,7 +87,6 @@ fieldset:last-child label, fieldset:last-child select{
 
 #boutonretour{
 	display: inline-block;
-	width: 35%;
 	margin-bottom: -47.5px;
 	border-radius: 0 15px;
 }
@@ -97,22 +96,24 @@ fieldset:last-child label, fieldset:last-child select{
 	font-size: 20pt;
 	border: solid thin rgb(255,255,255);
 	padding: .25em .5em;
-	
+	width: 35%;
 }
 
 #achat{
 	align-self: flex-end;
 	border-radius: 15px 0;
-	width: 35%;
+	
 }
 
-input[type="submit"]{
+input[type="submit"], #boutonretour a{
 	text-align: center;
 	font-family: 'Federo', sans-serif;
 	color: rgb(255,255,255);
-	display: inline-block;
-	border: none;
 	cursor:pointer;
+}
+#boutonretour a{
+	width: 100%;
+	padding-left: 1.75em;
 }
 
 

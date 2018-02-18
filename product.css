@@ -66,6 +66,7 @@
 }
 
 label{
+	display: block;
 	padding: 0 20px 0.5em;
 	font-family: 'Federo', sans-serif;
 	color: rgb(255, 255, 255);
@@ -78,6 +79,8 @@ label{
 }
 
 #ajout{
+	margin-top: 100px;
+	float: inline-end;
 	width: 200px;
 	border-radius: 15px 0 15px 0;
 	padding: 0.5em 0.25em;
