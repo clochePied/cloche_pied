@@ -65,7 +65,6 @@
 	margin: 5px 10px;
 	border-radius: 15px;
 	position:relative;
-	text-align: center;
 }
 
 @media screen and (max-width: 545px) {
@@ -127,7 +126,7 @@ img:hover{
 .infos{
   	position: absolute;
   	top: 50%;
-  	margin-left: 60px;
+  	margin-left: 70px;
   	transform: translate(-50%, -50%);
  	-ms-transform: translate(-50%, -50%);
 }
