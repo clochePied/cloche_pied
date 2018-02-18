@@ -185,7 +185,11 @@ li img{
 }
 
 /*gestion du footer*/
-
+footer nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
 dl{
 	padding: 0 1.5em;
 	margin: 0.5em 1em 1em;

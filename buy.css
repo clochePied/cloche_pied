@@ -85,21 +85,21 @@ fieldset:last-child label, fieldset:last-child select{
 	margin: auto;
 }
 
-#bouton{
+#boutonretour{
 	display: inline-block;
 	width: 35%;
 	margin-bottom: -47.5px;
+	border-radius: 0 15px;
 }
-#retour, #achat{
+
+#boutonretour, #achat{
 	background-color: rgb(225, 115, 30);
 	font-size: 20pt;
 	border: solid thin rgb(255,255,255);
 	padding: .25em .5em;
 	
 }
-#retour{
-	border-radius: 0 15px;
-}
+
 #achat{
 	align-self: flex-end;
 	border-radius: 15px 0;

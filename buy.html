@@ -26,8 +26,8 @@
 							<li><a href="men.html">Hommes</a></li>
 							<li><a href="women.html">Femmes</a></li>
 							<li><a href="sales.html">Promotions</a></li>
-							<li><a href="basket.html">Votre panier<img src="imgs/icons/panier.png"/></a></li>
-							<li id="search"><input type="search" placeholder="Rechercher..."/><a href="product.html"><img src="imgs/icons/loupe.png"/></a></li>
+							<li><a href="basket.html">Votre panier<img src="imgs/icons/panier.png" alt="icone panier"/></a></li>
+							<li id="search"><input type="search" placeholder="Rechercher..."/><a href="product.html"><img src="imgs/icons/loupe.png" alt="icone loupe"/></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -98,7 +98,7 @@
 									Téléphone : 
 									<input type="tel" maxlength="14" placeholder="04 xx xx..." id="tel" name="tel"/>
 								</label>
-								<label for="email">
+								<label for="adresseEmail">
 									Courriel : 
 									<input type="email" id="adresseEmail" name="adresseEmail"/>
 								</label>
@@ -133,6 +133,7 @@
 									<label for="moisexp">
 										Mois : 
 										<select id="moisexp" name="moisexp" required>
+											<option value="">Choisir</option>
 											<option>Janvier</option>
 											<option>Février</option>
 											<option>Mars</option>
@@ -147,9 +148,10 @@
 											<option>Décembre</option>
 										</select>
 									</label>
-									<label for"anneeexp">
+									<label for="anneeexp">
 										Année : 
 										<select id="anneeexp" name="anneeexp" required>
+											<option value="">Choisir</option>
 											<option>2018</option>
 											<option>2019</option>
 											<option>2020</option>
@@ -164,40 +166,36 @@
 									</label>
 								</fieldset>
 							</section>
-							<a href="index.html"  id="bouton">
-							<input type="submit" value="Poursuivre mes achats" id="retour">
-							</a>
+							<div id="boutonretour">
+								<a href="index.html">Poursuivre mes achats</a>
+							</div>
 							<input type="submit" value="Valider mon achat" id="achat" name="achat"/>
 						</form>	
 					</div>
 				</div>													
 			</main>
 			<footer>
+				<nav>
 					<dl>
 						<dt>Contact</dt>
-						<nav>
-							<dd><a href="progress.html">Nous trouver</dd>
-							<dd><a href="progress.html">Lettre d'information</dd>
-							<dd><a href="progress.html">Facebook</dd>
-						</nav>
+							<dd><a href="progress.html">Nous trouver</a></dd>
+							<dd><a href="progress.html">Lettre d'information</a></dd>
+							<dd><a href="progress.html">Facebook</a></dd>
 					</dl>
 					<dl>
 						<dt>Services &amp; conditions</dt>
-						<nav>
-							<dd><a href="progress.html">Commandes et retours</dd>
-							<dd><a href="progress.html">Conditions de vente</dd>
-							<dd><a href="progress.html">Mentions légales</dd>
-						</nav>
+							<dd><a href="progress.html">Commandes et retours</a></dd>
+							<dd><a href="progress.html">Conditions de vente</a></dd>
+							<dd><a href="progress.html">Mentions légales</a></dd>
 					</dl>
 					<dl>
 						<dt>Cloche-Pied</dt>
-						<nav>
 							<dd><a href="about.html">♢Qui sommes-nous ?♢</a><dd>
-							<dd><a href="progress.html">Plan du site</dd>
-							<dd><a href="details.html">♢Détails techniques♢</dd>
-						</nav>
+							<dd><a href="progress.html">Plan du site</a></dd>
+							<dd><a href="details.html">♢Détails techniques♢</a></dd>
 					</dl>
-				</footer>
+				</nav>
+			</footer>
 		</div>
 	</body>
 </html>
