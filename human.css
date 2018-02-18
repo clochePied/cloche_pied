@@ -4,7 +4,7 @@
     padding: 0.25em 0.5em;
     color: white;
     margin: 15px 0px;
-    font-family: 'Federo', sans-serif;
+   	font-family: 'Federo', sans-serif;
 }
 
 .product_list{
@@ -12,20 +12,59 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
-	justify-content: space-between;
 	padding-bottom: 15px;
+	justify-content: space-between;
 }
+
+
+.product_small p{
+	display: inline-block;
+	height: 100%;
+	color: rgb(175, 35, 5);
+	font-family: 'Federo';
+	font-size: 48px;
+}
+
 .product_small{
-	height: 150px;
-	width: 150px;
-	margin: 15px;
+	float:left;
+	width : 17%;
+	margin: 5px 10px;
+	border-radius: 15px;
+	position:relative;
 }
 
 .product_small img{
-	height: 100%;
-	border-radius: 15px;
+	width:100%;
+	object-fit: cover;
+  	border-radius: 15px;
+  	display:block;
+  	
 }
 
 img:hover{
 	box-shadow: 0 0 15px rgba(0,0,0,.9);
+}
+
+@media screen and (max-width: 950px) {
+	#messagejour p{
+		margin:0px 10%;
+	}
+}
+
+@media screen and (max-width: 545px) {
+	.product_small{
+		width : 95%;
+	}
+}
+
+@media screen and (min-width:545px) and (max-width: 657px) {
+	.product_small{
+		width :46%;
+	}
+}
+
+@media screen and (min-width:657px) and (max-width: 910px) {
+	.product_small{
+		width :28%;
+	}
 }
