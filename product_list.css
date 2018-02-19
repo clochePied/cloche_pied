@@ -32,12 +32,13 @@
 	
 }
 
-.product-info h1{
+.product-info h2{
 	font-family: 'Federo', sans-serif;
 	background-color: rgb(75, 75, 75);
 	letter-spacing: 0.1em;
 	font-size: 40px;
 	color: rgb(255, 255, 255);
+	padding-left: 1em;
 }
 
 .product-info form{
@@ -46,6 +47,8 @@
 
 input[type="submit"]{
 	border: none;
+	border-radius: 15px 0;
+	padding: .25em .5em;
 	background-color: rgb(75, 75, 75);
 	cursor:pointer;
 	font-family: 'Federo', sans-serif;

@@ -7,8 +7,9 @@
 }
 
 .container h3{
-	font-size:20px;
-	color:white;
+	padding: .25em;
+	font-size:20pt;
+	color: white;
 	font-family: 'Federo', sans-serif;
 	background-color: rgb(75, 75, 75);
 }
@@ -16,10 +17,11 @@
 .basket{
 	text-align:center;
 	margin: auto 2%;
+	padding-top: .25em;
 	border-radius:15px;
 	background-color: rgb(225, 115, 30);
 	background-image:url(imgs/icons/high-heel.png);
 	background-size:10%;
-	height:7em;
+	height:70%;
 }
 
