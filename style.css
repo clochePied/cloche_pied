@@ -1,4 +1,4 @@
-/*taille du body et couleur du fond*/
+/*body--------------------------------------------------------------------*/
 body{
 	width: 97.5%;
 	margin: 0 auto 1.25%;
@@ -8,32 +8,22 @@ body{
 	repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
 }
 
-/*gestion du header, du main et du footer. position et taille*/
+/*contenant du site-------------------------------------------------------*/
 #wrap{
-	display: flex;
-	flex-direction: column;
 	margin: auto;
 	max-width: 1300px;
 }
 
-/*emplacement du header et gestion de ses marges*/
-header{
-	align-self: flex-start;
-    width:100%;
-    height:290px;
-	margin-bottom: 35px;
-}
-
-/*constrution et apparence du logo*/
+/*header*/
+/*------------------------------------------------------------------------*/
+/*logo*/
 #logo{
 	position:relative;
 	margin: 0.70em auto -0.25em;
 	padding: 0.5em 0.20em;
 	width: 6.5em;
 	z-index:2;
-	border-style: double;
-	border-width: thick;
-	border-color: rgb(255, 255, 255);
+	border: double thick white;
 	border-radius: .3em;
 	background-color: rgb(0, 0, 0);
 	box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
@@ -43,7 +33,7 @@ header{
 	color: rgb(255, 255, 255);
 }
 
-/*gestion du bandeau gris sous le logo*/
+/*ruban sous le logo*/
 #ribbon{
 	position: relative;
 	width: 22em;
@@ -98,77 +88,103 @@ header{
 	z-index: 0;
 }
 
-/*gestion du main*/
+/*params pour largeur d'écran inférieure à 657px*/
+@media screen and (max-width: 657px) {
+	/*logo*/
+	#logo{
+	    font-size: 28px;
+	}
+
+	/*bandeau sous le logo*/
+	#ribbon{
+		width: 13em;
+		font-size: 18px;
+	}
+}
+
+/*params pour largeur d'écran entre 657px et 950px*/
+@media screen and (min-width:657px) and (max-width: 950px) {
+	/*logo*/
+	#logo{
+	    font-size: 36px;
+	}
+
+	/*bandeau sous le logo*/
+	#ribbon{
+		width: 18em;
+		font-size: 24px;
+	}
+
+	/*message du jour*/
+	#messagejour p{
+		margin:0px 10%;
+	}
+}
+/*------------------------------------------------------------------------*/
+
+
+/*main*/
+/*------------------------------------------------------------------------*/
 main{
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, .25);
-	z-index:1;
-	margin-top: 20px;
-}
-
-#homeIcon{
-	padding:1em;
-}
-
-
-/*construction du menu latéral*/
-.menu{
-	background-color: rgb(225, 115, 30);
-	border-top-left-radius: 15px;
-	padding: 0.1em 0em;
-	box-shadow: 5px 0px 7.5px rgba(0, 0, 0, .25);
-	z-index:2;
-}
-
-.menu a{
-	text-decoration: none;
-	color:white;
-}
-
-.menu ul{
-	margin: 0 0 auto -30px;
-	max-width: 250px;
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.menu ul li:first-child{
-	padding: 0.75em 0 0.5em;
-}
-
-.menu ul li{
-	padding: 0.25em 0 0.5em;
-	border-bottom : medium dotted rgb(120,50,5);
-	list-style: none;
-	font-family: 'Federo', sans-serif;
-	font-size: 24px;
-}
-
-#search input{
+	color: white;
 	font-family: 'Dosis';
 }
 
-@media screen and (max-width: 1080px) {
-	#search input{
-		width:60%;
+/*menu*/
+/*------------------------------------------------------------------------*/
+	.menu{
+		background-color: rgb(225, 115, 30);
+		border-top-left-radius: 15px;
+		box-shadow: 5px 0px 7.5px rgba(0, 0, 0, .25);
+		z-index:2;
 	}
-}
 
-@media screen and (min-width:1080px){
-	#search input{
-		width:75%;
+	.menu ul{
+		margin: 0 0 auto -30px;
+		display: flex;
+		flex-direction: column;
 	}
-}
 
-li img{
-	padding-left:0.25em;
-	margin: 0.25em 0.75em 0 0;
-	height:24px;
-	float: right;
-}
+	.menu li:first-child{
+		padding: 0.75em 0 0.5em;
+	}
+
+	.menu li{
+		padding: 0.25em 0 0.5em;
+		border-bottom : medium dotted rgb(120,50,5);
+		list-style: none;
+		font-family: 'Federo', sans-serif;
+		font-size: 24px;
+	}
+
+	.menu img{
+		margin: 0.25em 0.75em 0 0;
+		height:24px;
+		float: right;
+	}
+
+	@media screen and (min-width:1080px){
+		#search input{
+			width:75%;
+		}
+	}
+
+	@media screen and (min-width:657px) and (max-width: 1080px) {
+		#search input{
+			width:60%;
+		}
+	}
+
+	@media screen and (max-width:657px){
+		#search input{
+			width:80%;
+		}
+	}
+/*----------------------------------------------------------------------*/
+
+/*produits*/
 .container{
-	width: 100%;
 	border-top-right-radius: 15px;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -176,108 +192,12 @@ li img{
 	z-index:1;
 }
 
-.container h1{
+.container h2{
 	display: block;
 	color: rgb(0, 0, 0);
 	font-family: 'Federo', 'Times New Roman', serif;
 	font-size: 24px;
 	text-align: center;
-}
-
-/*gestion du footer*/
-footer nav{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-dl{
-	padding: 0 1.5em;
-	margin: 0.5em 1em 1em;
-	border-left-style: solid;
-	border-left-width: thin;
-	border-left-color: rgb(255, 255, 255);	
-}
-
-
-dt{
-	padding: .35em 0 .25em;
-	font-family: 'Federo', sans-serif;
-	font-size: 16px;
-	color: rgb(255, 255, 255);
-}
-
-dd{
-	margin-left: 0.5em;
-	font-family: 'Dosis', sans-serif;
-	font-size: 16px;
-	color: rgb(255, 255, 255);
-}
-
-
-a{
-	text-decoration:none;
-	color:inherit;
-}
-
-@media screen and (max-width: 657px) {
-	footer{
-		background-color: rgb(45, 45, 45);
-		display: block;
-		padding:2%;
-	}
-}	
-
-@media screen and (min-width: 657px) {
-	footer{
-		align-self: flex-end;
-		width: 100%;
-		height:120px;
-		border-bottom-left-radius: 15px;
-		border-bottom-right-radius: 15px;
-		background-color: rgb(45, 45, 45);
-		display: flex;
-		justify-content: space-between;
-	}
-}
-
-@media screen and (max-width: 657px) {
-	header{
-		margin-bottom:0;
-		height:100%;
-	}
-
-	/*constrution et apparence du logo*/
-	#logo{
-	    font-size: 28px;
-	}
-
-/*gestion du bandeau gris sous le logo*/
-	#ribbon{
-		width: 13em;
-		font-size: 18px;
-	}
-}
-
-@media screen and (min-width:657px) and (max-width: 950px) {
-	header{
-		margin-bottom:0;
-		height:100%;
-	}
-
-	/*constrution et apparence du logo*/
-	#logo{
-	    font-size: 36px;
-	}
-
-/*gestion du bandeau gris sous le logo*/
-	#ribbon{
-		width: 18em;
-		font-size:24px;
-	}
-
-	#messagejour p{
-		margin:0px 10%;
-	}
 }
 
 @media screen and (min-width:657px){
@@ -288,4 +208,57 @@ a{
 	.menu{
 		width:250px;
 	}
+}
+
+@media screen and (max-width:657px){
+	main{
+		text-align: center;
+	}
+}
+/*---------------------------------------------------------------------*/
+
+/*footer*/
+/*---------------------------------------------------------------------*/
+footer{
+	background-color: rgb(45, 45, 45);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding:2%;
+	color: white;
+}
+
+/*params pour largeur écran supérieure à 690px*/
+@media screen and (min-width: 725px) {
+	footer nav{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+/*menu*/
+dl{
+	padding: 0 1.5em;
+	margin: 0.5em 1em 1em;
+	border-left: solid thin white;	
+}
+
+dt{
+	padding: 0.35em 0 0.25em;
+	font-family: 'Federo', sans-serif;
+}
+
+dd{
+	margin-left: 0.5em;
+	font-family: 'Dosis', sans-serif;
+}
+/*---------------------------------------------------------------------*/
+/*fin footer*/
+
+
+/*autres*/
+/*---------------------------------------------------------------------*/
+/*liens*/
+a{
+	text-decoration:none;
+	color:inherit;
 }
