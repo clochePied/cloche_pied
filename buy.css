@@ -1,3 +1,9 @@
+/***Pas besoin du flex dans le conteneur principal***/
+.container{
+	display: block;
+}
+
+/***Bandeau conteneur principal***/
 .container h2 {
 	display:block;
     background-color: rgb(45, 45, 45);
@@ -5,6 +11,14 @@
     color: white;
     margin: 15px 0px;
     font-family: 'Federo', sans-serif;
+}
+
+
+/***Table récapitulative de la commande***/
+#recap{
+	font-family: 'Federo', sans-serif;
+	text-align: center;
+	padding-bottom: 0.5em;
 }
 
 table{
@@ -17,18 +31,14 @@ table{
 	width: 80%;
 }
 
-#recap{
-	font-family: 'Federo', sans-serif;
-	text-align: center;
-	padding-bottom: 0.5em;
-}
-
 th{
 	
 	font-weight: bold;
 	vertical-align: bottom;
 }
 
+
+/***Formulaire de saisie des informations client***/
 form{
 	display: flex;
 	flex-direction: column;
@@ -37,19 +47,13 @@ form{
 	border-radius: 15px;
 }
 
-.coord input, select{
-	display: inline-block;
-	float: right;
-	margin: .75% 67.5% .5% 0;
-}
-
 p{
 	font-family: Dosis;
 	font-size: 14pt;
 	color: rgb(255,255,255);
 	margin-left: 5%;
 }
-
+/**astérique**/
 abbr{
 	color: rgb(175, 35, 5);
 	font-size: 18pt;
@@ -64,56 +68,65 @@ label, legend{
 	margin-left: 12.5%;
 	min-height: 40px;
 }
+/**alignement des champs**/
+.coord input, select{
+	display: inline-block;
+	float: right;
+	margin: .75% 67.5% .5% 0;
+}
+
+/**Champ CB**/
 legend{
 	margin-left:0;
 }
+
 fieldset{
 	border-radius: 15px;
 	border: solid thin rgb(255,255,255);
 	width: 30%;
 	padding: .25em .5em;
 	margin: auto auto 2% 11.5%;
+	display: flex;
 	align-content: space-between;
 }
 
-fieldset:last-child{
-	display: flex;
-}
 
 fieldset:last-child label, fieldset:last-child select{
 	display: inline-block;
 	margin: auto;
 }
 
-#boutonretour{
-	display: inline-block;
-	margin-bottom: -47.5px;
-	border-radius: 0 15px;
-}
+
+
+/***Boutons***/
+
 
 #boutonretour, #achat{
 	background-color: rgb(225, 115, 30);
 	font-size: 20pt;
 	border: solid thin rgb(255,255,255);
 	padding: .25em .5em;
-	width: 35%;
+	
+}
+
+#boutonretour{
+	display: inline-block;
+	margin-bottom: -47.5px;
+	border-radius: 0 15px;
+	padding-left: 1.75em;
+	width:28%;
 }
 
 #achat{
 	align-self: flex-end;
 	border-radius: 15px 0;
-	
+	width: 35%;
 }
 
 input[type="submit"], #boutonretour a{
-	text-align: center;
 	font-family: 'Federo', sans-serif;
 	color: rgb(255,255,255);
 	cursor:pointer;
-}
-#boutonretour a{
-	width: 100%;
-	padding-left: 1.75em;
 }
 
 

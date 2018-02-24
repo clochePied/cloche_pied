@@ -1,38 +1,71 @@
+/****Gestion de l'affichage des produits (hommes, femmes, promo)****/
+
+/***Bandeau du conteneur***/
 .container h2 {
 	display:block;
+	text-align: center;
     background-color: rgb(45, 45, 45);
-    padding: 0.25em 0.5em;
     color: white;
     margin: 15px 0px;
+    padding: .25em 0;
    	font-family: 'Federo', sans-serif;
+   	width: 100%;
 }
 
+/***Conteneur flexbox des produits***/
 .product_list{
-	padding: 2%;
+	padding: .5em 1em;
+	margin: 1em auto 2em;
 	display: flex;
 	flex-wrap: wrap;
-	margin: auto;
-	padding-bottom: 15px;
-	justify-content: space-between;
+	justify-content: center;
 }
 
-
-.product_small p{
-	display: inline-block;
-	height: 100%;
-	color: rgb(175, 35, 5);
-	font-family: 'Federo';
-	font-size: 48px;
-}
-
-.product_small{
+/***Conteneurs produits***/
+.product_list a{
+	color: black;
 	float:left;
 	width : 17%;
-	margin: 5px 10px;
+	margin:10px;
 	border-radius: 15px;
 	position:relative;
 }
 
+/***Affichage du prix superposé***/
+/**Dégradé**/
+.infos{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .25s ease;
+	background: linear-gradient(transparent, transparent  15%, rgba(255,255,255,.3) 30%, rgba(255,255,255,.8));
+	border-radius: 15px;
+}
+
+/**texte**/
+.boxinfo{
+	color: black;
+	font-family: Dosis;
+	font-size: 13pt;
+	margin-left:.75em;
+}
+.promo{
+	text-decoration: line-through;
+}
+
+/**Effets**/
+/*Superposition*/
+.product_small:hover .infos{
+	opacity: 1;
+}
 .product_small img{
 	width:100%;
 	object-fit: cover;
@@ -41,15 +74,14 @@
   	
 }
 
-img:hover{
+/*Ombres*/
+.container a:hover{
 	box-shadow: 0 0 15px rgba(0,0,0,.9);
 }
 
-@media screen and (max-width: 950px) {
-	#messagejour p{
-		margin:0px 10%;
-	}
-}
+
+
+
 
 @media screen and (max-width: 545px) {
 	.product_small{

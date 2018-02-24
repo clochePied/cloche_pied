@@ -1,8 +1,48 @@
+/*** Conteneur principal : pas besoin de la flexbox***/
+.container{
+	display: block;
+	padding-bottom:15px;
+}
+.container h2 {
+    background-color: rgb(45, 45, 45);
+    padding: 0.25em 0.5em;
+    color: white;
+    margin: 15px 0px;
+    font-family: 'Federo', sans-serif;
+}
+
+
+
+/***Contenant panier***/
+
+.basket{
+	margin: auto 2%;
+	border-radius:15px;
+	background-color: rgb(225, 115, 30);
+}
+
+/**Table récapitulative de l'achat (table du bas)**/
+.basket table{
+	border-collapse:collapse;
+	font-family: Dosis;
+	font-size: 18pt;
+	color: rgb(255,255,255);
+	text-align: left;
+	margin: 0 25% 1em;
+	width: 50%;
+}
+
+.basket th, td{
+	border-bottom: dotted thin rgba(255,255,255,.5);
+	padding: 0 .25em;
+}
 th{
 	font-weight: bold;
 	width:80%;
 	vertical-align: bottom;
 }
+
+/**Gestion des boutons**/
 input[type="submit"]{
 	text-align: center;
 	font-family: 'Federo', sans-serif;
@@ -12,65 +52,64 @@ input[type="submit"]{
 	cursor:pointer;
 }
 
-.container h2 {
-	display:block;
-    background-color: rgb(45, 45, 45);
-    padding: 0.25em 0.5em;
-    color: white;
-    margin: 15px 0px;
-    font-family: 'Federo', sans-serif;
-}
-
-.container:last-child{
-	padding-bottom:15px;
-}
-
-
-
-.container p{
-	display:block;
-	font-size:16px;
-	color:white;
-	font-family: 'Federo', sans-serif;
-}
-
-.basket{
-	margin: auto 2%;
-	border-radius:15px;
+#boutonretour, #commande{
 	background-color: rgb(225, 115, 30);
+	font-size: 20pt;
+	border: solid thin rgb(255,255,255);
+	padding: .25em .5em;
 }
 
-.basket table{
-	border-collapse:collapse;
-	font-family: Dosis;
-	font-size: 18pt;
+#boutonretour{
+	font-family: 'Federo', sans-serif;
 	color: rgb(255,255,255);
-	text-align: left;
-	margin: 0 auto 1em;
-	width: 50%;
+	text-align: center;
+	width: 25%;
+	margin-bottom: -47.5px;
+	border-radius: 0 15px;
 }
 
-.basket th, td{
-	border-bottom: dotted thin rgba(255,255,255,.5);
-	padding: 0 .25em;
+#commande{
+	border-radius: 15px 0;
 }
 
+/**Position du dernier bouton**/
+form:last-child{
+ 	float:right;
+ }
 
 
+
+/***Conteneur(s) secondaire(s) pour les articles ajoutés***/
 .achat{
 	background-color: rgb(75,75,75);
 	height: 380px;
 	box-shadow: 0 3px 5px rgba(0,0,0,.3);
+	border-radius: 15px;
 }
-.achat:first-child{
+
+/**Header de l'article**/
+.headerarticle{
+	background-color: rgb(45,45,45);
+	padding: 0 2.75em;
+	display: flex;
+	justify-content: space-between;
+	height:20%;
 	border-radius: 15px 15px 0 0;
 }
 
+.headerarticle p{
+	display:inline-block;
+	font-size: 20pt;
+}
+
+/**Image de l'article**/
 .achat img{
 	height: 80%;
 	float: left;
+	border-radius: 0 0 0 15px;
 }
 
+/**Table descriptive de taricle**/
 .achat table{
 	border-collapse:collapse;
 	font-family: Dosis;
@@ -85,21 +124,7 @@ input[type="submit"]{
 	padding: 2em .5em 0 0;
 }
 
-.headerarticle{
-	background-color: rgb(45,45,45);
-	padding: 0 2.75em;
-	display: flex;
-	justify-content: space-between;
-	height:20%;
-}
-.headerarticle:first-child{
-	border-radius: 15px 15px 0 0;
-}
-.headerarticle p{
-	display:inline-block;
-	font-size: 20pt;
-}
-
+/**Gestion du bouton "retirer du panier"**/
 .retrait{
 	background-color: rgb(75, 75, 75);
 	margin: 4.9em 0 0 auto;
@@ -119,27 +144,4 @@ input[type="submit"]{
 .achat input[type="submit"]{
 	background-color: rgb(75, 75, 75);
 	font-size: 16pt;
-	
 }
-
-#boutonretour, #commande{
-	background-color: rgb(225, 115, 30);
-	font-size: 20pt;
-	border: solid thin rgb(255,255,255);
-	padding: .25em .5em;
-}
-#boutonretour{
-	font-family: 'Federo', sans-serif;
-	color: rgb(255,255,255);
-	text-align: center;
-	width: 35%;
-	margin-bottom: -47.5px;
-	border-radius: 0 15px;
-}
-
-#commande{
-	border-radius: 15px 0;
-}
- form:last-child{
- 	float:right;
- }

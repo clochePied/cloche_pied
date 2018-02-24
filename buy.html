@@ -34,144 +34,142 @@
 
 				<div class="container">
 					<h2>Votre commande</h2>
-					<div id="commande">
-						<table>
-							<tr>
-								<th colspan="6" id="recap">Récapitulatif de commande :</th>
-							</tr>
-							<tr>
-								<th>Article(s)</th>
-								<th>Pointure</th>
-								<th>Pied</th>
-								<th>Prix unitaire</th>
-								<th>Nombre</th>
-								<th>Montant total</th>
-							</tr>
-							<tr>
-								<td>Chewing Gum Shoe</td>
-								<td>36,5</td>
-								<td>Gauche</td>
-								<td>675 €</td>
-								<td>1</td>
-								<td>675 €</td>
-							</tr>
-							<tr>
-								<td colspan="3">Frais de port</td>
-								<td>4,30 €</td>
-								<td>1</td>
-								<td>4,30 €</td>
-							</tr>
-							<tr>
-								<th colspan="5">TOTAL</th>
-								<th>680,05 €</th>
-							</tr>
-						</table>
-						<form>
-							<section class="coord">
-								<h2>Vos coordonnées postales</h2>
-								<p><strong><abbr title="obligatoire">*</abbr> : mentions obligatoires</strong></p>
-								<label for="nom">
-									Votre nom<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="text" id="nom" name="nom" required/>
-								</label>
-								<label for="prenom">
-									Votre prénom<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="text" id="prenom" name="prenom" required/>
-								</label>
-								<label for="naissance">
-									Date de naissance<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="date" id="naissance" name="naissance" required/>
-								</label>
-								<label for="adresse">
-									Votre adresse<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="text" placeholder="Numéro et rue" id="adresse" name="adresse" required/>
-								</label>
-								<label for="cp">
-									Code postal<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="text" maxlength="5" id="cp" name="cp" required/>
-								</label>
-								<label for="ville">
-									Ville<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="text" placeholder="Ville" id="ville" name="ville" required/>
-								</label>
-								<label for="tel">
-									Téléphone : 
-									<input type="tel" maxlength="14" placeholder="04 xx xx..." id="tel" name="tel"/>
-								</label>
-								<label for="adresseEmail">
-									Courriel : 
-									<input type="email" id="adresseEmail" name="adresseEmail"/>
-								</label>
-							</section>
-							<section class="coord">
-								<h2>Vos coordonnées bancaires</h2>
-								<label for="carte">
-									Type de carte :
-									<select id="carte" name="carteutilisateur">
-										<option value="visac">VISA</option>
-										<option value="maestroc">Maestro</option>
-										<option value="masterc">MasterCard</option>
-										<option value="amexc">American Express</option>
+					<table>
+						<tr>
+							<th colspan="6" id="recap">Récapitulatif de commande :</th>
+						</tr>
+						<tr>
+							<th>Article(s)</th>
+							<th>Pointure</th>
+							<th>Pied</th>
+							<th>Prix unitaire</th>
+							<th>Nombre</th>
+							<th>Montant total</th>
+						</tr>
+						<tr>
+							<td>Chewing Gum Shoe</td>
+							<td>36,5</td>
+							<td>Gauche</td>
+							<td>675 €</td>
+							<td>1</td>
+							<td>675 €</td>
+						</tr>
+						<tr>
+							<td colspan="3">Frais de port</td>
+							<td>4,30 €</td>
+							<td>1</td>
+							<td>4,30 €</td>
+						</tr>
+						<tr>
+							<th colspan="5">TOTAL</th>
+							<th>680,05 €</th>
+						</tr>
+					</table>
+					<form>
+						<section class="coord">
+							<h2>Vos coordonnées postales</h2>
+							<p><strong><abbr title="obligatoire">*</abbr> : mentions obligatoires</strong></p>
+							<label for="nom">
+								Votre nom<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="text" id="nom" name="nom" required/>
+							</label>
+							<label for="prenom">
+								Votre prénom<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="text" id="prenom" name="prenom" required/>
+							</label>
+							<label for="naissance">
+								Date de naissance<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="date" id="naissance" name="naissance" required/>
+							</label>
+							<label for="adresse">
+								Votre adresse<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="text" placeholder="Numéro et rue" id="adresse" name="adresse" required/>
+							</label>
+							<label for="cp">
+								Code postal<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="text" maxlength="5" id="cp" name="cp" required/>
+							</label>
+							<label for="ville">
+								Ville<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="text" placeholder="Ville" id="ville" name="ville" required/>
+							</label>
+							<label for="tel">
+								Téléphone : 
+								<input type="tel" maxlength="14" placeholder="04 xx xx..." id="tel" name="tel"/>
+							</label>
+							<label for="adresseEmail">
+								Courriel : 
+								<input type="email" id="adresseEmail" name="adresseEmail"/>
+							</label>
+						</section>
+						<section class="coord">
+							<h2>Vos coordonnées bancaires</h2>
+							<label for="carte">
+								Type de carte :
+								<select id="carte" name="carteutilisateur">
+									<option value="visac">VISA</option>
+									<option value="maestroc">Maestro</option>
+									<option value="masterc">MasterCard</option>
+									<option value="amexc">American Express</option>
+								</select>
+							</label>
+							<label for="idcb">
+								Numéro de CB<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="text"  maxlength="19" placeholder="xxxx xxxx..." id="idcb" name="idcb" required/>
+							</label>
+							<label for="titulaire">
+								Titulaire<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="text" placeholder="NOM Prénom" id="titulaire" name="titulaire" required/>
+							</label>
+							<label for="secuc">
+								Code de sécurité<strong><abbr title="obligatoire">*</abbr></strong> : 
+								<input type="text" maxlength="3" placeholder="xxx" id="secuc" name="secuc" required/>
+							</label>
+							<fieldset>
+								<legend>
+									Date d'expiration<strong><abbr title="obligatoire">*</abbr></strong> : 
+								</legend>
+								<label for="moisexp">
+									Mois : 
+									<select id="moisexp" name="moisexp" required>
+										<option value="">Choisir</option>
+										<option>Janvier</option>
+										<option>Février</option>
+										<option>Mars</option>
+										<option>Avril</option>
+										<option>Mai</option>
+										<option>Juin</option>
+										<option>Juillet</option>
+										<option>Août</option>
+										<option>Septembre</option>
+										<option>Octobre</option>
+										<option>Novembre</option>
+										<option>Décembre</option>
 									</select>
 								</label>
-								<label for="idcb">
-									Numéro de CB<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="text"  maxlength="19" placeholder="xxxx xxxx..." id="idcb" name="idcb" required/>
+								<label for="anneeexp">
+									Année : 
+									<select id="anneeexp" name="anneeexp" required>
+										<option value="">Choisir</option>
+										<option>2018</option>
+										<option>2019</option>
+										<option>2020</option>
+										<option>2021</option>
+										<option>2022</option>
+										<option>2023</option>
+										<option>2024</option>
+										<option>2025</option>
+										<option>2026</option>
+										<option>2027</option>
+									</select>
 								</label>
-								<label for="titulaire">
-									Titulaire<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="text" placeholder="NOM Prénom" id="titulaire" name="titulaire" required/>
-								</label>
-								<label for="secuc">
-									Code de sécurité<strong><abbr title="obligatoire">*</abbr></strong> : 
-									<input type="text" maxlength="3" placeholder="xxx" id="secuc" name="secuc" required/>
-								</label>
-								<fieldset>
-									<legend>
-										Date d'expiration<strong><abbr title="obligatoire">*</abbr></strong> : 
-									</legend>
-									<label for="moisexp">
-										Mois : 
-										<select id="moisexp" name="moisexp" required>
-											<option value="">Choisir</option>
-											<option>Janvier</option>
-											<option>Février</option>
-											<option>Mars</option>
-											<option>Avril</option>
-											<option>Mai</option>
-											<option>Juin</option>
-											<option>Juillet</option>
-											<option>Août</option>
-											<option>Septembre</option>
-											<option>Octobre</option>
-											<option>Novembre</option>
-											<option>Décembre</option>
-										</select>
-									</label>
-									<label for="anneeexp">
-										Année : 
-										<select id="anneeexp" name="anneeexp" required>
-											<option value="">Choisir</option>
-											<option>2018</option>
-											<option>2019</option>
-											<option>2020</option>
-											<option>2021</option>
-											<option>2022</option>
-											<option>2023</option>
-											<option>2024</option>
-											<option>2025</option>
-											<option>2026</option>
-											<option>2027</option>
-										</select>
-									</label>
-								</fieldset>
-							</section>
-							<div id="boutonretour">
-								<a href="index.html">Poursuivre mes achats</a>
-							</div>
-							<input type="submit" value="Valider mon achat" id="achat" name="achat"/>
-						</form>	
-					</div>
+							</fieldset>
+						</section>
+						<div id="boutonretour">
+							<a href="index.html">Poursuivre mes achats</a>
+						</div>
+						<input type="submit" value="Valider mon achat" id="achat" name="achat"/>
+					</form>	
 				</div>													
 			</main>
 			<footer>

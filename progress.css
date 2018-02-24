@@ -1,26 +1,25 @@
-main{
-	font-family: 'Federo';
-	font-size:20px;
-	border-radius: 15px 15px 0 0;
-	background-color:rgb(175, 35, 5);
+/*** Fond du conteneur ***/
+.container{
 	background-image:url(imgs/icons/high-heel.png);
 	background-size:10%;
 }
 
+/*** Message ***/
 #work{
 	color:white;
 	text-align: center;
-	width:100%;
-	height:12em;
-	padding:5%;
-}
-
-#work p{
+	width:90%;
+	height:55px;
+	margin-top: 2em;
+	padding-top:.75em;
 	background: linear-gradient(rgba(45,45,45,.8), rgba(45,45,45,.7)60%, rgba(45,45,45,.3));
 	border: solid thin rgb(45,45,45);
 	border-radius: 3px;
-	padding:10px;
+	font-family: Federo;
+	font-size: 20pt;
 }
+
+	
 
 main a{
 	height:90px;
