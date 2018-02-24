@@ -10,20 +10,20 @@
     padding: 0.25em 0.5em;
     color: white;
     margin: 15px 0px;
-    font-family: 'Federo', sans-serif;
+    font-family: 'Federo', 'Times New Roman', serif;
 }
 
 
 /***Table récapitulative de la commande***/
 #recap{
-	font-family: 'Federo', sans-serif;
+	font-family: 'Federo', 'Times New Roman', serif;
 	text-align: center;
 	padding-bottom: 0.5em;
 }
 
 table{
 	border-collapse:collapse;
-	font-family: Dosis;
+	font-family: 'Dosis', Helvetica, sans-serif;
 	font-size: 14pt;
 	color: rgb(255,255,255);
 	text-align: left;
@@ -48,7 +48,7 @@ form{
 }
 
 p{
-	font-family: Dosis;
+	font-family: 'Dosis', Helvetica, sans-serif;
 	font-size: 14pt;
 	color: rgb(255,255,255);
 	margin-left: 5%;
@@ -62,7 +62,7 @@ abbr{
 
 label, legend{
 	display: block;
-	font-family: Dosis;
+	font-family: 'Dosis', Helvetica, sans-serif;
 	font-size: 12pt;
 	color: rgb(255,255,255);
 	margin-left: 12.5%;
@@ -124,7 +124,7 @@ fieldset:last-child label, fieldset:last-child select{
 }
 
 input[type="submit"], #boutonretour a{
-	font-family: 'Federo', sans-serif;
+	font-family: 'Federo', 'Times New Roman', serif;
 	color: rgb(255,255,255);
 	cursor:pointer;
 }

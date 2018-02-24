@@ -8,7 +8,7 @@
     padding: 0.25em 0.5em;
     color: white;
     margin: 15px 0px;
-    font-family: 'Federo', sans-serif;
+    font-family: 'Federo', 'Times New Roman', serif;
 }
 
 
@@ -24,7 +24,7 @@
 /**Table récapitulative de l'achat (table du bas)**/
 .basket table{
 	border-collapse:collapse;
-	font-family: Dosis;
+	font-family: 'Dosis', Helvetica, sans-serif;
 	font-size: 18pt;
 	color: rgb(255,255,255);
 	text-align: left;
@@ -45,7 +45,7 @@ th{
 /**Gestion des boutons**/
 input[type="submit"]{
 	text-align: center;
-	font-family: 'Federo', sans-serif;
+	font-family: 'Federo', 'Times New Roman', serif;
 	color: rgb(255,255,255);
 	display: inline-block;
 	border: none;
@@ -60,7 +60,7 @@ input[type="submit"]{
 }
 
 #boutonretour{
-	font-family: 'Federo', sans-serif;
+	font-family: 'Federo', 'Times New Roman', serif;
 	color: rgb(255,255,255);
 	text-align: center;
 	width: 25%;
@@ -112,7 +112,7 @@ form:last-child{
 /**Table descriptive de taricle**/
 .achat table{
 	border-collapse:collapse;
-	font-family: Dosis;
+	font-family: 'Dosis', Helvetica, sans-serif;
 	font-size: 14pt;
 	color: rgb(255,255,255);
 	text-align: left;

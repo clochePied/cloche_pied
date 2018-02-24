@@ -7,7 +7,7 @@
 .container h2 {
 	display: block;
 	text-align: center;
-	font-family: 'Federo';
+	font-family: 'Federo', 'Times New Roman', serif;
 	font-size: 20pt;
 	margin: auto;	
 }
@@ -21,7 +21,7 @@ h2:first-child{
 .container p {
 	padding-top: 5px;
 	text-align: justify;
-	font-family: 'Dosis';
+	font-family: 'Dosis', Helvetica, sans-serif;
 	font-size : 16pt;
 	width: 70%;
 	margin: auto;

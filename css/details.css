@@ -10,13 +10,13 @@
 }
 
 #mentions p{
-	font-family: Dosis;
+	font-family: 'Dosis', Helvetica, sans-serif;
 	font-size: 14pt;
 	color: rgb(255,255,255);
 	padding-left: 10%;
 }
 #mentions h2{
-	font-family: 'Federo', sans-serif;
+	font-family: 'Federo', 'Times New Roman', serif;
 	font-size: 16pt;
 	padding: 0.5em 12%;
 	color: rgb(255,255,255);
