@@ -3,9 +3,11 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
 .sectionaccueil:last-child{
 	padding-bottom:15px;
 }
+
 .sectionaccueil h2{
 	background-color:rgb(45, 45, 45);
 	padding: 0.25em 0.5em;
@@ -21,9 +23,11 @@
 	font-size:16pt;
 	font-family:'Dosis', Helvetica, sans-serif;
 }
+
 cite{
 	font-style: normal;
 }
+
 .sectionaccueil blockquote{
 	margin:1em 25%;
 	font-size:14pt;
@@ -49,16 +53,19 @@ cite{
 	border-radius: 15px;
 	position:relative;
 }
+
 @media screen and (max-width: 545px) {
 	.box{
 		width : 95%;
 	}
 }
+
 @media screen and (min-width:545px) and (max-width: 657px) {
 	.box{
 		width :46%;
 	}
 }
+
 @media screen and (min-width:657px) and (max-width: 910px) {
 	.box{
 		width :28%;
@@ -121,6 +128,7 @@ cite{
 		font-size:14px;
 	}
 }
+
 @media screen and (min-width: 1000px) {
 	.infos{
 	  	margin-left: 70px;
