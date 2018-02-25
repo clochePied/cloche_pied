@@ -33,7 +33,7 @@ p:last-child{
 	padding-bottom: 60px;
 }
 
-/*portraits->losangess*/
+/*portraits->losanges*/
 .portrait {
     height: 105px;
     width: 105px;
@@ -48,7 +48,7 @@ p:last-child{
     max-width: 105px;
 }
 
-/*portraits resposables*/
+/*portraits responsables*/
 #duo{
 	display: flex;
 	width: 500px;

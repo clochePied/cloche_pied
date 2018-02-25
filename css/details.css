@@ -4,6 +4,7 @@
 	background-color: rgb(175, 35, 5);
 	z-index: 1;
 }
+
 #mentions{
 	max-height: 95%;
 	width: 100%;
@@ -15,6 +16,7 @@
 	color: rgb(255,255,255);
 	padding-left: 10%;
 }
+
 #mentions h2{
 	font-family: 'Federo', 'Times New Roman', serif;
 	font-size: 16pt;
